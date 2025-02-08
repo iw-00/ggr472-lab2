@@ -14,13 +14,13 @@ map.on("load", () => {
     // Add buildings as points
     map.addSource("toronto-ticks", {
         type: "geojson",
-        data: "https://raw.githubusercontent.com/iw-00/ggr472-ex4/refs/heads/main/data/buildings.geojson"
+        data: "https://raw.githubusercontent.com/iw-00/ggr472-lab2/refs/heads/main/data/toronto-ticks.geojson"
     });
     
     map.addLayer({
-        id: "buildings-pt",
+        id: "ticks-pt",
         type: "circle",
-        source: "buildings-data",
+        source: "toronto-ticks",
         paint: {
             "circle-radius": 4,
             "circle-color": "#1ff258"
